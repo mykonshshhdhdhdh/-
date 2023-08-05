@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title> 个人网页</title>
+<style>
+body {
+display:flex; 
+flex-direction:column;
+align-items:center;
+}
+.jz {
+text-decoration:none;
+color:black;
+}
+img {
+display: block;
+    margin: auto;
+    margin-top:6px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+}
+.p {
+float:right;
+}
+.gd {
+    display: block;
+    margin: auto;
+    margin-top:6px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:-3;
+    animation:youmove 3s infinite;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    border-style:solid;
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    background-color:#f1f1f1;
+    overflow: hidden;
+}
+.tx {
+    display: block;
+    margin: auto;
+    margin-top:6px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:-4;
+    animation:txmove 3s infinite;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    border-style:solid;
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    background-color:#f1f1f1;
+    overflow: hidden;
+}
+.one {
+display: block;
+    margin: auto;
+    margin-top:6px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:-1;
+
+}
+.holly {
+display: block;
+    margin: auto;
+    margin-top:6px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:-2;
+    animation:mymove 2s infinite;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    border-style:solid;
+    border-radius:50%;
+    width:80px;
+    height:80px;
+    background-color:#f1f1f1;
+    overflow: hidden;
+}
+.bk {
+display: block;
+    margin: auto;
+    margin-top:6px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:-2;
+    animation:bkmove 2s infinite;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
+    border-style:solid;
+    border-radius:50%;
+    width:80px;
+    height:80px;
+    background-color:#f1f1f1;
+    overflow: hidden;
+}
+<!-- 这是联系方式 -->
+.holly:active {
+width:90px;
+height:90px;
+}
+.gd:active {
+width:90px;
+height:90px;
+}
+.bk:active {
+width:90px;
+height:90px;
+}
+.jz:active {
+width:90px;
+height:90px;
+}
+@keyframes mymove
+{
+from {top:50%;}
+to {top:200px;}
+from {left:50%;}
+to {left:50px;}
+}
+@keyframes youmove
+{
+from {top:50%;}
+to {top:600px;}
+from {left:50%;}
+to {left:80px;}
+}
+@keyframes bkmove
+{
+from {top:50%;}
+to {top:300px;}
+from {left:50%;}
+to {left:300px;}
+}
+@keyframes txmove
+{
+from {top:50%;}
+to {top:100px;}
+from {left:50%;}
+to {left:200px;}
+}
+
+.holly:hover {
+width:300px;
+height:300px;
+-webkit-transition-property:width,height;
+	-webkit-transition-duration:2s;
+}
+.gd:hover {
+width:200px;
+height:200px;
+-webkit-transition-property:width,height;
+	-webkit-transition-duration:2s;
+}
+.tx:hover {
+width:200px;
+height:200px;
+-webkit-transition-property:width,height;
+	-webkit-transition-duration:2s;
+
+<!-- 这是联系方式 -->
+
+
+
+</style>
+</head>
+
+<body>
+<button class="one" onclick="jianjei()"><img src="头像.png" alt="some_text" width="110" height="110"></button>
+<button class="holly" onclick="go()" id="demo"><p>联系方式</p><p class="p"><b>邮箱</b><br>2528197707@qq.com<br><b>微信</b><br>B2528197707<br><b>QQ</b><br>2528197707</p></button>
+<button class="gd" onclick="go()" id="demo"><p><b>生日</b><br>9.18<br><br>在2009年出生<br>刚好错过北京奥运会</p></button>
+<button class="tx" onclick="go()" id="demo"><p>提醒<br><br><br>请尽量用手机打开此网站<br>如有错误请联系站长</p></button>
+<button class="bk" onclick="go()" id="demo"><a  class="jz" href="https://mykonshshhdhdhdh.github.io/my/index.html">旧站</a></button>
+<script>
+
+ </script>
+</body>
+</html>
