@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Lucky☆Star</title>
+<link rel="stylesheet" href="music.css">
+<link rel="stylesheet" href="hui.css">
+<style>
+body {
+display:flex; 
+flex-direction:column;
+align-items:center;
+background: linear-gradient(to right, #ff7373, #ffea73);
+
+}
+
+
+
+.div {
+display: inline;
+background-color: #D52B7C;
+position: absolute;
+top: 0px;
+left: 0px;
+width: 100%;
+height:65px;
+}
+.index {
+margin-left:15%;
+margin-top:50%;
+filter: drop-shadow(2px 2px 10px white);
+
+}
+.jeisao {
+margin-left:10%;
+margin-right:10%;
+margin-top:50%;
+filter: drop-shadow(2px 2px 10px white);
+}
+.jeisaot {
+margin-right:15()%;
+margin-top:50%;
+
+filter: drop-shadow(2px 15px 10px #10d0ff);
+}
+.mc {
+position:relative;
+top: 100px;
+overflow:hidden;
+height:400px;
+width:350px;
+}
+.mxa {
+position:absolute;
+top: 100px;
+left: 5px;
+text-align: center;
+display:flex; 
+flex-direction:column;
+align-items:center;
+}
+.mxa div {
+width:350px;;
+height:200px;
+overflow:hidden;
+}
+.mxa p {
+background:#372121;
+color:white;
+height:25px;
+width:340px;
+line-height:21px;
+border-radius:10px;
+opacity:0.8;
+}
+
+.mxb {
+position:absolute;
+top: 100px;
+left: 360px;
+text-align: center;
+display:flex; 
+flex-direction:column;
+align-items:center;
+}
+.mxb div {
+width:350px;
+height:200px;
+overflow:hidden;
+}
+.mxb p {
+background:#372121;
+color:white;
+height:25px;
+width:340px;
+line-height:21px;
+border-radius:10px;
+opacity:0.8;
+}
+
+.mxc {
+position:absolute;
+top: 100px;
+left: 360px;
+text-align: center;
+display:flex; 
+flex-direction:column;
+align-items:center;
+}
+.mxc div {
+width:350px;
+height:200px;
+overflow:hidden;
+}
+.mxc p {
+background:#372121;
+color:white;
+height:25px;
+width:340px;
+line-height:21px;
+border-radius:10px;
+opacity:0.8;
+}
+
+.mxy {
+position:absolute;
+top: 100px;
+left: 360px;
+text-align: center;
+display:flex; 
+flex-direction:column;
+align-items:center;
+}
+.mxy div {
+width:350px;
+height:200px;
+overflow:hidden;
+}
+.mxy p {
+background:#372121;
+color:white;
+height:25px;
+width:340px;
+line-height:21px;
+border-radius:10px;
+opacity:0.8;
+}
+.mxp {
+background:#372121;
+color:white;
+height:100px;
+width:30px;
+line-height:21px;
+border-radius:10px;
+opacity:0.4;
+border-style:none;
+position:absolute;
+top: 200px;
+left: 320px;
+z-index: 9;
+}
+.mxq {
+background:#372121;
+color:white;
+height:100px;
+width:30px;
+line-height:21px;
+border-radius:10px;
+opacity:0.4;
+border-style:none;
+position:absolute;
+top: 200px;
+left: 5px;
+z-index: 9;
+}
+</style>
+</head>
+
+<body>
+<table table border="0">
+<tr>
+  <td>
+  <div class="div">
+  <a href="index.html" class="index">
+  <img border="0" src="首页.png" alt="首页" width="55"></a>
+  <a href="jl.html" class="jeisao">
+  <img border="0" src="介绍.png" alt="介绍" width="55" ></a>
+  <a href="#ee" class="jeisaot">
+  <img border="0" src="相册.png" alt="介绍" width="55" ></a>
+
+  </div>
+  </td>
+</tr>
+</table>
+<div class="mc">
+<button onclick="q()" class="mxp">&#62</button>
+<br>
+<br>
+<button onclick="b()" class="mxq">&#60</button>
+
+
+<div class="mxa" id="mxa">
+<p>细的一边撕下来蘸流出来的巧克力酱</p>
+<div>
+<img border="0" src="美幸1.png" alt="介绍" width="100%" >
+</div>
+</div>
+
+
+<div class="mxb" id="mxb">
+<p>用盖子部分蘸下面部分的奶油吃</p>
+<div>
+<img border="0" src="美幸2.png" alt="介绍" width="100%" >
+</div>
+</div>
+
+<div class="mxc" id="mxc">
+<p>参考草莓，鲜奶油，蛋糕底按比例吃</p>
+<div>
+<img border="0" src="美幸3.png" alt="介绍" width="100%" >
+</div>
+</div>
+
+<div class="mxc" id="mxy">
+<p>转着吃雪糕</p>
+<div>
+<img border="0" src="美幸4.gif" alt="介绍" width="100%" >
+</div>
+</div>
+
+
+</div>
+<script>
+var p=0;
+var d=0;
+
+function q(){
+ p=p+1;
+ if(p==4){
+ p=3;
+ }
+ if(p==1){
+ var mxa = document.getElementById('mxa');mxa.style.transition = "1s"; mxa.style.left= "-350px";
+  var mxb = document.getElementById('mxb');mxb.style.transition = "1s"; mxb.style.left= "5px";
+  var mxc = document.getElementById('mxc');mxc.style.transition = "1s"; mxc.style.left= "360px";
+}
+if(p==2){
+ var mxa = document.getElementById('mxb');mxa.style.transition = "1s"; mxa.style.left= "-350px";
+  var mxb = document.getElementById('mxc');mxb.style.transition = "1s"; mxb.style.left= "5px";
+  var mxc = document.getElementById('mxy');mxc.style.transition = "1s"; mxc.style.left= "360px";
+}
+if(p==3){
+ var mxa = document.getElementById('mxc');mxa.style.transition = "1s"; mxa.style.left= "-350px";
+  var mxb = document.getElementById('mxy');mxb.style.transition = "1s"; mxb.style.left= "5px";
+}
+
+}
+function b(){
+ p=p-1;
+ if(p==-1){
+ p=0;
+ }
+ if(p==0){
+ var mxa = document.getElementById('mxa');mxa.style.transition = "1s"; mxa.style.left= "5px";
+  var mxb = document.getElementById('mxb');mxb.style.transition = "1s"; mxb.style.left= "360px";
+  var mxc = document.getElementById('mxc');mxc.style.transition = "1s"; mxc.style.left= "360px";
+}
+if(p==1){
+ var mxa = document.getElementById('mxb');mxa.style.transition = "1s"; mxa.style.left= "5px";
+  var mxb = document.getElementById('mxc');mxb.style.transition = "1s"; mxb.style.left= "360px";
+  var mxc = document.getElementById('mxy');mxc.style.transition = "1s"; mxc.style.left= "360px";
+}
+if(p==2){
+ var mxa = document.getElementById('mxc');mxa.style.transition = "1s"; mxa.style.left= "5px";
+  var mxb = document.getElementById('mxy');mxb.style.transition = "1s"; mxb.style.left= "360px";
+}
+}
+</script>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="music">
+ <img border="0" src="音乐.png" alt="介绍" width="50" >
+<audio controls class="bmusic">
+  <source src="平野绫、加藤英美里、福原香織、远藤綾 - もってけ！セーラーふく (拿去吧！水手服).mp3" type="audio/mpeg" class="amusic">
+</audio>
+<div class="ck">
+<button onclick="one()">拿去吧，水手服!</button>
+<button onclick="two()">どんだけファンファーレ</button>
+<button onclick="three()">Dドライヴ ラヴ</button>
+<button onclick="four()">ケンカ予報の時間だよ</button>
+<button onclick="five()">寝・逃・げでリセット！</button>
+</div>
+</div>
+<script src="music.js"></script>
+<script src="music.js"></script>
+<button class="hui"id="hui" onclick="hui()">  <img border="0" src="泉此方2.gif" alt="介绍" width="55" > </button>
+<script src="hui.js"></script>
+</body>
+</html>
